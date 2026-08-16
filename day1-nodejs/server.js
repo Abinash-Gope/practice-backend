@@ -2,6 +2,7 @@ let http = require("http");
 
 let server = http.createServer((req, res) => {
     console.log("hello im server")
+    res.end("ok mene tumhari baat sunli")
 })
 
 server.listen(3000, () => {
