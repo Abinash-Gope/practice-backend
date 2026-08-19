@@ -23,10 +23,12 @@ const express = require("express");
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send("ok got it")
+app.get("/", (req,res) => {
+  res.send("Hey you reached here")
 })
 
-app.listen(3000, () => {
-  console.log("server is running on port 3000");
-});
+let port = 30;
+
+app.listen(port, () => {
+  console.log(`server is running on port ${port}`)
+})
